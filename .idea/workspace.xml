@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bda7c4d-1779-47a0-9737-aa9c1c2a8e7f" name="Changes" comment="trying to sort, not completed">
+    <list default="true" id="9bda7c4d-1779-47a0-9737-aa9c1c2a8e7f" name="Changes" comment="sorting is completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PseudoSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PseudoSorting.java" afterDir="false" />
     </list>
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753016644180</updated>
-      <workItem from="1753016645280" duration="4549000" />
+      <workItem from="1753016645280" duration="4638000" />
     </task>
     <task id="LOCAL-00001" summary="trying to sort, not completed">
       <created>1753093541766</created>
@@ -61,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1753093541766</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sorting is completed">
+      <created>1753093953828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753093953828</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +87,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="trying to sort, not completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to sort, not completed" />
+    <MESSAGE value="sorting is completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting is completed" />
   </component>
 </project>

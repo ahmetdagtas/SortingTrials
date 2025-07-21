@@ -17,14 +17,14 @@ public class PseudoSorting {
     public void runTheSort(){
         int[] sourceArr = getSourceArr();
         printTheSortedArr(sourceArr);
-        System.out.println("**** **** **** **** ****");
+        System.out.println("\n**** **** **** **** ****");
         int[] sortedArr = sortTheArr(sourceArr);
         printTheSortedArr(sortedArr);
     }
 
 
     private int[] getSourceArr() {
-        int arrayDimension = 10;
+        int arrayDimension = 100;
         int[] inputContext = new int[arrayDimension];
         Random random = new Random();
         for (int i = 0; i < inputContext.length; i++) {
@@ -34,8 +34,8 @@ public class PseudoSorting {
     }
 
     private int[] sortTheArr(int[] unsortedArr){
-        for (int i = 0; i<unsortedArr.length - 1; i++) {
-            for (int j=0; j<unsortedArr.length -1; j++){
+        for (int i = 0; i<unsortedArr.length; i++) {
+            for (int j=0; j<unsortedArr.length; j++){
                 if (i == j) { continue; }
                 if (unsortedArr[j] > unsortedArr[i]){
                     int temp = unsortedArr[i];
