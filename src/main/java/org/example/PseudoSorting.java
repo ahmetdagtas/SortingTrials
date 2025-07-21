@@ -16,13 +16,16 @@ public class PseudoSorting {
 
     public void runTheSort(){
         int[] sourceArr = getSourceArr();
+        printTheSortedArr(sourceArr);
+        System.out.println("**** **** **** **** ****");
         int[] sortedArr = sortTheArr(sourceArr);
         printTheSortedArr(sortedArr);
     }
 
 
     private int[] getSourceArr() {
-        int[] inputContext = new int[10000];
+        int arrayDimension = 10;
+        int[] inputContext = new int[arrayDimension];
         Random random = new Random();
         for (int i = 0; i < inputContext.length; i++) {
             inputContext[i] = random.nextInt((int)Byte.MAX_VALUE);
@@ -31,26 +34,18 @@ public class PseudoSorting {
     }
 
     private int[] sortTheArr(int[] unsortedArr){
-        int[] sortedArr = new int[unsortedArr.length];
-        int sortArrLastIndex = 0;
-
-        int smallestValueOfSortedArr;
         for (int i = 0; i<unsortedArr.length - 1; i++) {
-            smallestValueOfSortedArr = sortedArr[sortArrLastIndex];
-            // sorted son eleman,
-            // sorted dizideki en küçük elemanın değeri
-            // unsorted iteration'daki eleman
-
-            // sorted dizideki en küçük elemanla VS. unsorted listedeki iteration
-            // eğer unsorted küçükse
-
-            if (unsortedArr[i] <= smallestValueOfSortedArr){
-                continue;
+            for (int j=0; j<unsortedArr.length -1; j++){
+                if (i == j) { continue; }
+                if (unsortedArr[j] > unsortedArr[i]){
+                    int temp = unsortedArr[i];
+                    unsortedArr[i] = unsortedArr[j];
+                    unsortedArr[j] = temp;
+                }
             }
-            else if (unsortedArr[i] > unsortedArr[i+1])
         }
 
-        return sortedArr;
+        return unsortedArr;
     }
 
     private void printTheSortedArr(int[] sortedArr){
